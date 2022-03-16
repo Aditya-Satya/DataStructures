@@ -16,7 +16,7 @@ public class PascalsTriangle2 {
 		System.out.println("num of rows= "+n+"\n");
 		List<List<Integer>> res= genPasTriangle(n);
 		for(List<Integer> A : res) {
-			for(int i=0; i < res.size()-A.size(); i++) {
+			for(int i=0; i< res.size()-A.size(); i++) {
 				System.out.print(" ");
 			}
 			for(int y : A){
