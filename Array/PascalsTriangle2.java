@@ -1,5 +1,5 @@
 import java.util.*;
-public class PascalsTriangle1 {
+public class PascalsTriangle2 {
 	public static List<List<Integer>> genPasTriangle(int n) {
 		List<List<Integer>> pascalTriangle = new ArrayList<>();
 		for(int i=0; i<n; i++) {
@@ -20,7 +20,7 @@ public class PascalsTriangle1 {
 				System.out.print(" ");
 			}
 			for(int y : A){
-				System.out.print(y +" ");
+				System.out.print(y+" ");
 			}System.out.println();
 		}System.out.println("\nPascal's Triangle");
 	}
