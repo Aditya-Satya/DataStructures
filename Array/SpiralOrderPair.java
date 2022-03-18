@@ -1,8 +1,3 @@
-/* 
- * Name:- Aditya Satya
- * RegNo:- 19410121063
- * Class:- CSE-O
- */
 import java.util.*;
 public class SpiralOrderPair{
 
