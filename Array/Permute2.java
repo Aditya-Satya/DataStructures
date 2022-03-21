@@ -1,16 +1,16 @@
 import java.util.*;
 public class Permute2 {
 	public static void Permutation(List<Integer> P, List<Integer> A){
-		for(int i = 0; i<A.size(); ++i){
-			int next = i;
-			while(P.get(next)>=0){
-				Collections.swap(A , i, P.get(next));
-				int temp = P.get(next);
-				P.set(next, P.get(next)-P.size());
-				next = temp;
+		for(int i=0; i<A.size(); ++i){
+			int nxt=i;
+			while(P.get(nxt)>=0){
+				Collections.swap(A, i, P.get(nxt));
+				int tmp= P.get(nxt);
+				P.set(nxt, P.get(nxt)-P.size());
+				nxt= tmp;
 			}
 		}
-		for(int i =0; i<P.size(); i++) {
+		for(int i=0; i< P.size(); i++) {
 			P.set(i, P.get(i)+P.size());
 		}
 	}
