@@ -24,7 +24,7 @@ public class DutchFlagProb3 {
 		a.add(Color.BLUE);
 		System.out.println("Before Partition: "+a);
 		dutchFlagPartition(5,a);
-//		Collections.sort(a);
+                // Collections.sort(a);
 		System.out.println("After Partition : "+a);
 	}
 }
