@@ -1,7 +1,7 @@
 import java.util.*;
 public class Sudoku2 {
 	public static boolean isValidSudoku(List<List<Integer>> partialAssignment){
-		for(int i=0;i<partialAssignment.size();++i) {
+		for(int i=0; i<partialAssignment.size(); ++i) {
 			if (hasDuplicate(partialAssignment,i,i+1,0,partialAssignment.size())){
 				return false;
 			}
@@ -22,7 +22,7 @@ public class Sudoku2 {
 		return true ;
 	}
 	private static boolean hasDuplicate (List <List<Integer>> partialAssignment,int startRow,int endRow,int startCol,int endCol ) {
-		List<Boolean> isPresent=new ArrayList<>(Collections.nCopies (partialAssignment.size()+1,false));
+		List<Boolean> isPresent=new ArrayList<>(Collections.nCopies(partialAssignment.size()+1,false));
 		for(int i=startRow;i<endRow; ++i) {
 			for(int j=startCol;j<endCol;++j) {
 				if(partialAssignment.get(i).get(j)!=0&&isPresent.get(partialAssignment.get(i).get (j))) {
@@ -50,8 +50,7 @@ public class Sudoku2 {
 				System.out.print(l.get(i).get(j) + " ");
 			}System.out.println();
 		}
-		boolean result = isValidSudoku(l);
-		if(result){
+		if(isValidSudoku(l)){
 			System.out.println("Valid");
 		}
 		else{
