@@ -18,8 +18,7 @@ public class Sudoku2 {
 					return false;
 				}
 			}
-		}
-		return true ;
+		}return true ;
 	}
 	private static boolean hasDuplicate (List <List<Integer>> partialAssignment,int startRow,int endRow,int startCol,int endCol ) {
 		List<Boolean> isPresent=new ArrayList<>(Collections.nCopies(partialAssignment.size()+1,false));
@@ -45,9 +44,9 @@ public class Sudoku2 {
 		l.add(new ArrayList<Integer>(Arrays.asList(0, 0, 0, 4, 1, 9, 0, 0, 5)));
 		l.add(new ArrayList<Integer>(Arrays.asList(0, 0, 0, 0, 8, 0, 0, 7, 9)));
 		System.out.println("Partial Sudoku: ");
-		for (int i = 0; i <l.size(); i++) {
-			for (int j = 0; j <l.get(i).size(); j++) {
-				System.out.print(l.get(i).get(j) + " ");
+		for (int i=0; i<l.size(); i++) {
+			for(int j=0; j<l.get(i).size(); j++) {
+				System.out.print(l.get(i).get(j)+" ");
 			}System.out.println();
 		}
 		if(isValidSudoku(l)){
