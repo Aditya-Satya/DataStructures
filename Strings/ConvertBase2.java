@@ -1,10 +1,10 @@
 import java.util.*;
-public class ConvertBase2 {		// Ques 1
+public class ConvertBase2 {			// Ques 1
 	public static String baseConversion(String s, int b1, int b2) {
-        char[] c = s.toCharArray();
-        boolean neg = c[0] == '-';
+        char c[]= s.toCharArray();
+        boolean neg= c[0] == '-';
         int n= 0;
-        for (int i = neg ? 1 : 0; i < c.length; i++) {
+        for (int i= neg ? 1 : 0; i< c.length; i++) {
             n*= b1;
             n+= Character.isDigit(c[i]) ?c[i] - '0' : c[i] - 'A' + 10 ;
         }
