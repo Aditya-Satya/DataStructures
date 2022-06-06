@@ -10,7 +10,7 @@ public class RevSingleSubList {
         while(k++<s) {
         	sub=sub.next;
         }
-//        sub = sub.get(s);
+
         ListNode<Integer> it = sub.next;
         while(s++<f) {
             ListNode<Integer> temp = it.next;
