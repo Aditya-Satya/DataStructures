@@ -1,8 +1,13 @@
 import java.util.*;
 public class decToBin {
     
-    public static String fun(int n){
-        return Integer.toBinaryString(n);
+    public static String fun(int n){		// for return type String
+    	return Integer.toBinaryString(n);
+    }
+
+    public static int fun(int n){		// for return type int
+    	// return Integer.parseInt(ans);
+        return Integer.valueOf(ans);
     }
 
 	public static void main(String[] args) {
